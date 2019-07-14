@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "GetAvailableMoves<-function(current_node, GameState){\n  # Get winning location nodes\n  size = dim(GameState$GameBoard)\n  middle = ceiling(size[2]/2) \n  \n  winningnodes1 = seq(size[1],size[1]*size[2],size[1]) + 1 - size[1]\n  winningnodes2 = seq(size[1],size[1]*size[2],size[1])\n  \n  winningnodes1 = winningnodes1[(middle-1):(middle+1)]\n  winningnodes2 = winningnodes2[(middle-1):(middle+1)]\n  \n\n  \n  #\n  AllMoves = GameState$MoveMatrix[current_node,]\n  AvailableMoves = which(AllMoves == 0)\n  \n  \n  if (current_node %in% winningnodes1){\n    AvailableMoves = c(AvailableMoves, 0)\n  }\n  \n  if (current_node %in% winningnodes2){\n    AvailableMoves = c(AvailableMoves, size[1] * size[2]+1)\n  }\n  \n  \n  return(AvailableMoves)\n  \n}",
+    "created" : 1481845073902.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "634696996",
+    "id" : "A6B7E871",
+    "lastKnownWriteTime" : 1481858671,
+    "last_content_update" : 1481858671132,
+    "path" : "C:/Users/Ari/Desktop/Line Hockey/Line Hockey/./Game/GetAvailableMoves.R",
+    "project_path" : "./Game/GetAvailableMoves.R",
+    "properties" : {
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

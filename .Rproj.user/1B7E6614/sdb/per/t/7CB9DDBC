@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1481859795904.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7CB9DDBC",
+    "lastKnownWriteTime" : 3419473789575321445,
+    "last_content_update" : 1481859795904,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "b721dgxhau",
+        "caption" : "GamePoints",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=GamePoints&cache_key=b721dgxhau",
+        "displayedObservations" : 37,
+        "environment" : "_rs_no_env",
+        "object" : "GamePoints",
+        "totalObservations" : 37,
+        "variables" : 3
+    },
+    "relative_order" : 13,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

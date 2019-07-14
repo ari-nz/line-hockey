@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "dir.Ai <- \"./AI\"\ndir.Board <- \"./Board\" \ndir.Game <- \"./Game\"\n\n\nsource(file.path(dir.Game, \"MakeMove.R\"))\nsource(file.path(dir.Game, \"GetAvailableMoves.R\"))\nsource(file.path(dir.Game, \"ContinueTurn.R\"))\nsource(file.path(dir.Board, \"CreateGameBoard.R\"))\nsource(file.path(dir.Board, \"PlotMove.R\"))\n\nGameState = CreateBoard(5)\n\n\nif(!interactive()){\n  print(GameState$MoveMatrix)\n  MakeMove(7, 8, GameState)\n  PlotMove(7, 8, GameState$GamePoints)\n\n  GetAvailableMoves(7, GameState)\n}\n\n\n\n\n",
+    "created" : 1480815939046.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "596826382",
+    "id" : "F21B5726",
+    "lastKnownWriteTime" : 1481262765,
+    "last_content_update" : 1481262765753,
+    "path" : "C:/Users/Ari/Desktop/Line Hockey/Line Hockey/run.r",
+    "project_path" : "run.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "MakeMove<-function(from_node, to_node, GameState, set.to = 1){\n  \n  \n\n  size = dim(GameState$GameBoard)\n  \n  ##TODO Error checking on inputs\n  CurrentValue = GameState$MoveMatrix[from_node, to_node]\n  \n  if(is.na(CurrentValue)){\n    stop(\"Moving to an invalid Location\")\n  }\n  \n  \n  if(CurrentValue == 1){\n    stop(\"Moving to an already visited Location\")\n  }\n  \n  if(CurrentValue == -1){\n    stop(\"Moving to current location\")\n  }\n  \n  \n  #Update Move Matrix\n  GameState$MoveMatrix[from_node, to_node] = set.to\n  GameState$MoveMatrix[to_node, from_node] = set.to\n\n  #Update Game Board\n  NewNode = GameState$GamePoints[to_node,]\n  GameState$GameBoard[size[1] - NewNode[[1]]+ 1, NewNode[[2]]] = GameState$GameBoard[size[1] - NewNode[[1]]+ 1,  NewNode[[2]]] + 1 \n  \n  \n  return(GameState)\n}",
+    "created" : 1480816727447.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2256840076",
+    "id" : "2A6B0E68",
+    "lastKnownWriteTime" : 1481196935,
+    "last_content_update" : 1481196935,
+    "path" : "C:/Users/Ari/Desktop/Line Hockey/Line Hockey/Game/MakeMove.R",
+    "project_path" : "Game/MakeMove.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

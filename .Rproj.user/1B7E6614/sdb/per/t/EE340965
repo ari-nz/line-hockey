@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "ContinueTurn<-function(GameState, to_node){\n  #Checks to see if the player should have another movement by bouncing on a node.\n\n  size = dim(GameState$MaxGameBoard)\n  \n  node_coords = GameState$GamePoints[to_node, c(1,2)]\n  \n  is.vistied = GameState$GameBoard[1+ size[1]-node_coords[[1]],node_coords[[2]]]\n\n  if (is.vistied > 1){\n    continue = TRUE\n  } else {\n    continue = FALSE\n  }\n  \n  print(paste(\"Is it still the current player, (\", GameState$Turn, \")'s turn: \", continue))\n  \n  return(continue)\n}\n  ",
+    "created" : 1481848545782.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4004216858",
+    "id" : "EE340965",
+    "lastKnownWriteTime" : 1481848608,
+    "last_content_update" : 1481848608055,
+    "path" : "C:/Users/Ari/Desktop/Line Hockey/Line Hockey/./Game/ContinueTurn.R",
+    "project_path" : "./Game/ContinueTurn.R",
+    "properties" : {
+    },
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "PlotMove<-function(from_node, to_node, GamePoints, Turn = 0){\n  \n  from_info = GamePoints[from_node,]\n  to_info = GamePoints[which(GamePoints[,3] == to_node),]\n\n  x.0 = from_info[[2]]\n  x.1 = to_info[[2]]\n  y.0 = from_info[[1]]\n  y.1 = to_info[[1]]\n  \n  if(Turn == 0){\n  segments(x.0,y.0,x.1,y.1, lwd = 2, col = 'grey50')\n  }else if(Turn == 1){\n    segments(x.0,y.0,x.1,y.1, lwd = 2, col = 'blue')\n  }else if(Turn == 2){\n    segments(x.0,y.0,x.1,y.1, lwd = 2, col = 'red')\n  }\n}\n\n",
+    "created" : 1481859782863.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1466646638",
+    "id" : "B78C1333",
+    "lastKnownWriteTime" : 1481859851,
+    "last_content_update" : 1481859851088,
+    "path" : "C:/Users/Ari/Desktop/Line Hockey/Line Hockey/./Board/PlotMove.R",
+    "project_path" : "./Board/PlotMove.R",
+    "properties" : {
+    },
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
